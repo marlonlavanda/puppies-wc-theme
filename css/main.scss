@@ -1,0 +1,42 @@
+// Import custom variables default overrides here
+$primary: rgb(127, 24, 127);
+$gray: #e6e6e6;
+
+$theme-colors: (
+  "primary": $primary,
+  "gray": $gray,
+);
+
+// Create your own map
+$custom-color: (
+  "icon-background": rgba(127, 24, 127, 0.2),
+);
+
+// Merge maps
+$theme-colors: map-merge($theme-colors, $custom-color);
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "./bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+/************HEADER**********/
+
+.annoucement-bar {
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--bs-gray);
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-flex;
+
+    li {
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
