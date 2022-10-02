@@ -10509,9 +10509,24 @@ textarea.form-control-lg {
   margin: 0;
   list-style-type: none;
   display: inline-flex;
+  margin: 0 -10px;
 }
 .annoucement-bar__list li {
   margin: 0 10px;
   display: flex;
   align-items: center;
+}
+.annoucement-bar__list li .bi {
+  background-color: var(--bs-icon-background);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+@media (max-width: 991.98px) {
+  .annoucement-bar {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
